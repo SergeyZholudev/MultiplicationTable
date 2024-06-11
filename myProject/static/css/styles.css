@@ -1,0 +1,31 @@
+* static/css/styles.css */
+
+main {
+    padding: 10px;
+    text-align: center;
+}
+table {
+    background: rgba(221, 220, 220, 0.25);
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid;
+}
+table tr:nth-child(even) {
+    background-color: rgb(226, 226, 226);
+}
+table thead th {
+    position: sticky;
+    top: 0;
+}
+table thead tr th {
+    background-color: rgba(178, 224, 232, 1.0);
+    padding: 15px;
+}
+table tbody tr th {
+    background-color: rgba(178, 224, 232, 1.0);
+    padding: 10px 15px;
+    min-width: 60px
+}
+table tbody th {
+    position: sticky;
+    left: 0;
+}

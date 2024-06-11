@@ -16,9 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import re_path
+
 from CurrentDate.views import date_time
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('date', date_time),
+    re_path(r'^multi', TemplateView.as_view(template_name="MultiplicationTable.html")),
     path('admin/', admin.site.urls),
 ]
