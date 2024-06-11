@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from CurrentDate.views import date_time
 
 urlpatterns = [
+    path('date', date_time),
     path('admin/', admin.site.urls),
 ]
