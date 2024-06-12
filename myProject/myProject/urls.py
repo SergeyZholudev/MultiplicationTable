@@ -25,4 +25,5 @@ urlpatterns = [
     path('date', date_time),
     re_path(r'^multi', TemplateView.as_view(template_name="MultiplicationTable.html")),
     path('admin/', admin.site.urls),
+    path('', date_time),
 ]
