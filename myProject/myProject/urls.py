@@ -20,10 +20,12 @@ from django.urls import re_path
 
 from CurrentDate.views import date_time
 from django.views.generic import TemplateView
+from dayOfProgrammer.views import programmer_day
 
 urlpatterns = [
-    path('date', date_time),
-    re_path(r'^multi', TemplateView.as_view(template_name="MultiplicationTable.html")),
+    re_path(r'^prog', programmer_day),
+    re_path(r'^date', date_time),
+    re_path(r'^mult', TemplateView.as_view(template_name="MultiplicationTable.html")),
     path('admin/', admin.site.urls),
     path('', date_time),
 ]
